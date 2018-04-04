@@ -37,11 +37,6 @@ public class MovieController extends AbstractController {
 	})
 	public ResponseEntity<Movie> registerMovies(@RequestBody final Movie movie) throws JsonParseException, JsonMappingException, IOException {
 
-		// RECIBES EL JSON
-		// LO VALIDAS
-		// LO METES EN BBDD
-		// IF OK -> RESPUESTA HTTSTATUS = OK;
-		// ELSE -> RESPUESTA HTTPSTATUS = BADREQEST;
 
 		final Movie movie2 = new Movie();
 		movie2.setTitle(movie.getTitle());
